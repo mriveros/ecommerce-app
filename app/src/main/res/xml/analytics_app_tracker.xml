@@ -10,9 +10,9 @@
     <bool name="ga_reportUncaughtExceptions">true</bool>
     <integer name="ga_sessionTimeout">-1</integer>
 
-    <screenName name="com.williamsetiono.ecommerce.activities.MainActivity">MainActivity</screenName>
-    <screenName name="com.williamsetiono.ecommerce.activities.ActivityMenuCategory">Product Category</screenName>
-    <screenName name="com.williamsetiono.ecommerce.activities.ActivityMenuList">Product List</screenName>
-    <screenName name="com.williamsetiono.ecommerce.activities.ActivityMenuDetail">Product Details</screenName>
+    <screenName name="com.mriveros.ecommerceapp.activities.MainActivity">MainActivity</screenName>
+    <screenName name="com.mriveros.ecommerceapp.activities.ActivityMenuCategory">Product Category</screenName>
+    <screenName name="com.mriveros.ecommerceapp.activities.ActivityMenuList">Product List</screenName>
+    <screenName name="com.mriveros.ecommerceapp.activities.ActivityMenuDetail">Product Details</screenName>
 
 </resources>

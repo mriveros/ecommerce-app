@@ -1,107 +1,107 @@
 <resources>
 
     <!--application name-->
-    <string name="app_name">E-Commerce Android App</string>
+    <string name="app_name">E-Commerce App</string>
 
     <!--navigation drawer and home menu name-->
-    <string name="menu_product">Product</string>
-    <string name="menu_cart">Cart</string>
-    <string name="menu_checkout">Checkout</string>
-    <string name="menu_profile">Profile</string>
-    <string name="menu_info">Information</string>
-    <string name="menu_about">About</string>
-    <string name="menu_share">Share</string>
-    <string name="menu_contact">Contact</string>
+    <string name="menu_product">Productos</string>
+    <string name="menu_cart">Carrito</string>
+    <string name="menu_checkout">Datos de Pago</string>
+    <string name="menu_profile">Perfil</string>
+    <string name="menu_info">Información</string>
+    <string name="menu_about">Acerca de</string>
+    <string name="menu_share">Comparte</string>
+    <string name="menu_contact">Contacto</string>
 
     <!--title bar-->
-    <string name="title_category">Category</string>
-    <string name="title_menu">Menu List</string>
-    <string name="title_cart">My Cart</string>
-    <string name="title_checkout">Checkout</string>
-    <string name="title_confirm">Congratulations</string>
-    <string name="title_contact_us">Contact Us</string>
-    <string name="title_about">About</string>
-    <string name="title_buy">Buy this item</string>
-    <string name="title_save">Save Image</string>
+    <string name="title_category">Categorías</string>
+    <string name="title_menu">Menu</string>
+    <string name="title_cart">Mi Carrito</string>
+    <string name="title_checkout">Pago</string>
+    <string name="title_confirm">Felicidades</string>
+    <string name="title_contact_us">Contactanos</string>
+    <string name="title_about">Acerca de</string>
+    <string name="title_buy">Comprar este Ítem</string>
+    <string name="title_save">Guardar Imagen</string>
 
     <!--action-->
-    <string name="action_cart">My Cart</string>
-    <string name="action_checkout">Process Checkout</string>
-    <string name="action_buy">Buy This Item</string>
-    <string name="action_save">Save Image</string>
-    <string name="action_clear">Clear All</string>
+    <string name="action_cart">Mi Carrito</string>
+    <string name="action_checkout">Proceso de Pago</string>
+    <string name="action_buy">Comprar este Item</string>
+    <string name="action_save">Guardar Imagen</string>
+    <string name="action_clear">Borrar Todo</string>
 
     <!--information tab name-->
-    <string name="information_tab1">How to Buy</string>
-    <string name="information_tab2">Payment</string>
-    <string name="information_tab3">Contact us</string>
+    <string name="information_tab1">Como Comprar</string>
+    <string name="information_tab2">Modo de Pago</string>
+    <string name="information_tab3">Contáctanos</string>
 
     <!--network-->
-    <string name="no_internet">Please, enable internet connection before using this app</string>
-    <string name="alert">Failed to connect internet!</string>
-    <string name="not_found">Product Not Found!</string>
+    <string name="no_internet">Por favor, conecte a  internet antes de usar la app</string>
+    <string name="alert">Error al Conectar a  Internet!</string>
+    <string name="not_found">Producto no Encontrado!</string>
 
     <!--shipping information on checkout menu-->
-    <string name="shipping_list_1">Free Shipping</string>
-    <string name="shipping_list_2">Cash On Delivery</string>
-    <string name="shipping_list_3">POS Indonesia</string>
-    <string name="shipping_list_4">JNE</string>
+    <string name="shipping_list_1">Envío Gratis</string>
+    <string name="shipping_list_2">Pago en Delivery</string>
+    <string name="shipping_list_3">POS Paraguay</string>
+    <string name="shipping_list_4">Otro</string>
 
     <!--menu, cart and order-->
-    <string name="search">Search Menu</string>
-    <string name="confirm">Confirmation</string>
-    <string name="number_order">Number of order : </string>
-    <string name="order">Order</string>
-    <string name="detail">Detail</string>
-    <string name="total_order">Total Order :</string>
-    <string name="clear_order">Clear all order</string>
-    <string name="clear_all_order">Do you want to clear your all order?</string>
-    <string name="clear_one_order">Do you want to clear this order?</string>
+    <string name="search">Búsqueda Menu</string>
+    <string name="confirm">Confirmacion</string>
+    <string name="number_order">Cantidad : </string>
+    <string name="order">Orden</string>
+    <string name="detail">Detalle</string>
+    <string name="total_order">Total Orden :</string>
+    <string name="clear_order">Borrar todo el order</string>
+    <string name="clear_all_order">Desea Borrar todo el order?</string>
+    <string name="clear_one_order">Desea Borrar esta orden?</string>
     <string name="db_exist_alert">Do you want to remove your previous order?</string>
-    <string name="no_order">Your Cart is Empty, Please Order first.</string>
-    <string name="option_yes">Yes</string>
+    <string name="no_order">Tu carrito esta vacío, Por favor ordene primero.</string>
+    <string name="option_yes">Si</string>
     <string name="option_no">No</string>
 
     <!--checkout menu-->
-    <string name="checkout_your_name">Your Name</string>
-    <string name="checkout_address">Your Address</string>
-    <string name="checkout_city">Your City</string>
-    <string name="checkout_province">Your Province</string>
-    <string name="checkout_email">Your Email</string>
-    <string name="checkout_set_date">Set Date</string>
-    <string name="checkout_set_time">Set Time</string>
-    <string name="checkout_phone_number">Phone Number</string>
-    <string name="checkout_order_list">Order List</string>
-    <string name="checkout_add_comment">Comment (Optional)</string>
-    <string name="checkout_send_order">Send</string>
-    <string name="form_alert">Please, complete the form first.</string>
-    <string name="sending_alert">Sending data. Please wait &#8230;</string>
-    <string name="ok_alert">Your Order has been successfully sent.</string>
-    <string name="failed_alert">Your Order has not been sent.</string>
-    <string name="order_alert">You have not ordered yet</string>
-    <string name="no_order_menu">No order</string>
+    <string name="checkout_your_name">Tu Nombre</string>
+    <string name="checkout_address">Tu Dirección</string>
+    <string name="checkout_city">Tu Ciudad</string>
+    <string name="checkout_province">Tu Barrio</string>
+    <string name="checkout_email">Tu Email</string>
+    <string name="checkout_set_date">Agregar Dia</string>
+    <string name="checkout_set_time">Agregar Hora</string>
+    <string name="checkout_phone_number">Número Telef.</string>
+    <string name="checkout_order_list">Orden Lista</string>
+    <string name="checkout_add_comment">Comentario (Opcional)</string>
+    <string name="checkout_send_order">Enviar</string>
+    <string name="form_alert">Por Favor, complete el formulario primero.</string>
+    <string name="sending_alert">Enviando Datos. Por Favor Espere &#8230;</string>
+    <string name="ok_alert">Tu orden ha sido enviado Exitosamente.</string>
+    <string name="failed_alert">Tu orden no ha sido enviado.</string>
+    <string name="order_alert">No has ordenado aún.</string>
+    <string name="no_order_menu">Sin orden</string>
 
     <!--app about information-->
-    <string name="app_version">Version 2.1.2</string>
-    <string name="app_copyright">Copyright &#169; 2017 \n All rights reserved</string>
-    <string name="app_email">vincentius.william.setiono@gmail.com</string>
-    <string name="share_summary">Share to your friends</string>
-    <string name="rate_summary">Give your rate and feedback</string>
-    <string name="more_summary">More apps from developer</string>
-    <string name="title_app_name">Application Name</string>
+    <string name="app_version">Version 1.1.2</string>
+    <string name="app_copyright">Copyright &#169; 2018 \n Apache Licence</string>
+    <string name="app_email">mriveros.py@gmail.com</string>
+    <string name="share_summary">Comparte con tus amigos</string>
+    <string name="rate_summary">Escribe tu comentario</string>
+    <string name="more_summary">Mas Aplicaciones</string>
+    <string name="title_app_name">Nombre de la App</string>
     <string name="title_app_version">Build Version</string>
     <string name="title_app_email">Email</string>
     <string name="title_app_copyright">Copyright</string>
-    <string name="title_app_share">Share</string>
+    <string name="title_app_share">Comparte</string>
     <string name="title_app_rate">Rate</string>
-    <string name="title_app_more">More</string>
-    <string name="more_apps">https://play.google.com/store/apps/developer?id=williamsetiono</string>
-    <string name="share_content">I Would like to share this with you. Here You Can Download This Application from PlayStore</string>
+    <string name="title_app_more">Más</string>
+    <string name="more_apps">https://www.smarthub.design</string>
+    <string name="share_content">Esta app podrás descargar muy pronto del Play Store</string>
 
     <!--contact us-->
-    <string name="hint_email_subject">Subject :</string>
-    <string name="hint_email_message">Message :</string>
-    <string name="button_send">Send</string>
+    <string name="hint_email_subject">Asunto :</string>
+    <string name="hint_email_message">Mensaje :</string>
+    <string name="button_send">Enviar</string>
 
     <!--nav drawer header image-->
     <!--set "@string/drawer_content_on" to enable navigation drawer header image-->

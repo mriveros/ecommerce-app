@@ -7,9 +7,9 @@
     <bool name="ga_dryRun">false</bool>
 
     <!-- The screen name that will appear in reports -->
-    <string name="com.williamsetiono.ecommerce.activities.MainActivity">MainActivity</string>
-    <string name="com.williamsetiono.ecommerce.activities.ActivityMenuCategory">Product Category</string>
-    <string name="com.williamsetiono.ecommerce.activities.ActivityMenuList">Product List</string>
-    <string name="com.williamsetiono.ecommerce.activities.ActivityMenuDetail">Product Details</string>
+    <string name="com.mriveros.ecommerceapp.activities.MainActivity">MainActivity</string>
+    <string name="com.mriveros.ecommerceapp.activities.ActivityMenuCategory">Product Category</string>
+    <string name="com.mriveros.ecommerceapp.activities.ActivityMenuList">Product List</string>
+    <string name="com.mriveros.ecommerceapp.activities.ActivityMenuDetail">Product Details</string>
 
 </resources>
