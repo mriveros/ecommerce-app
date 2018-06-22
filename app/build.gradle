@@ -5,7 +5,7 @@ android {
     buildToolsVersion "23.0.2"
 
     defaultConfig {
-        applicationId 'com.williamsetiono.ecommerce'
+        applicationId 'com.mriveros.ecommerce'
 
         // TODO: Please update the Google Project number and OneSignal Id below to yours.
         manifestPlaceholders = [manifestApplicationId          : "${applicationId}",
