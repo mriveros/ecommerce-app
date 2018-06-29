@@ -20,7 +20,6 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.github.clans.fab.FloatingActionButton;
-import com.mriveros.ecommerceapp.Config;
 import com.mriveros.ecommerce.R;
 import com.mriveros.ecommerceapp.adapters.AdapterCart;
 import com.mriveros.ecommerceapp.utilities.DBHelper;

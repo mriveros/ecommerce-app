@@ -8,8 +8,6 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
-import com.mriveros.ecommerceapp.Config;
-
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;

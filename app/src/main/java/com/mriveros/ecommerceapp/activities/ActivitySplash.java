@@ -6,6 +6,7 @@ import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
 
 import com.mriveros.ecommerce.R;
+import com.mriveros.ecommerceapp.LoginActivity;
 
 public class ActivitySplash extends AppCompatActivity {
 
@@ -21,7 +22,8 @@ public class ActivitySplash extends AppCompatActivity {
 			@Override
 			public void onFinish() {
 				/** Creates an intent to start new activity */
-				Intent intent = new Intent(getBaseContext(), MainActivity.class);
+				//Intent intent = new Intent(getBaseContext(), MainActivity.class);
+				Intent intent = new Intent(getBaseContext(), LoginActivity.class);
 
 				//memulai activity baru ketika waktu timer habis
 				startActivity(intent);

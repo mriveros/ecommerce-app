@@ -10,7 +10,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.mriveros.ecommerceapp.activities.ActivityMenuList;
-import com.mriveros.ecommerceapp.Config;
 import com.mriveros.ecommerce.R;
 import com.squareup.picasso.Picasso;
 

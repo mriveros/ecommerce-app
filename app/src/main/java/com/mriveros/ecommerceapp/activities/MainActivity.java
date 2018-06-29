@@ -29,11 +29,12 @@ import com.mriveros.ecommerceapp.analytics.Analytics;
 import com.mriveros.ecommerceapp.fragments.FragmentHome;
 import com.mriveros.ecommerceapp.utilities.DBHelper;
 import com.mriveros.ecommerceapp.utilities.utils;
-
+import com.mriveros.ecommerceapp.Session;
 import java.io.IOException;
 
 public class MainActivity extends AppCompatActivity {
 
+    private Session session;//global variable
     static DBHelper dbhelper;
     Toolbar toolbar;
     DrawerLayout mDrawerLayout;
@@ -47,7 +48,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_main);
-
+        Intent intent = getIntent();
+        String username = intent.getStringExtra("username");
+        session = new Session(getApplicationContext());
+        session.setusername(username);
         OneSignal.idsAvailable(new OneSignal.IdsAvailableHandler() {
             @Override
             public void idsAvailable(String userId, String registrationId) {

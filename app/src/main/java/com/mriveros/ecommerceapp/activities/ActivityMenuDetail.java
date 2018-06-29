@@ -36,7 +36,6 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.mriveros.ecommerceapp.Config;
 import com.mriveros.ecommerce.R;
 import com.mriveros.ecommerceapp.utilities.DBHelper;
 import com.squareup.picasso.Callback;

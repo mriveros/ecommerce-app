@@ -46,4 +46,6 @@ dependencies {
     compile 'com.google.android.gms:play-services-location:9.0.2'
     compile 'com.onesignal:OneSignal:2.+@aar'
     compile 'com.android.volley:volley:1.0.0'
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.2.0'
 }

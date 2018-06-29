@@ -19,7 +19,6 @@ import android.widget.GridView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.mriveros.ecommerceapp.Config;
 import com.mriveros.ecommerce.R;
 import com.mriveros.ecommerceapp.adapters.AdapterCategoryList;
 
