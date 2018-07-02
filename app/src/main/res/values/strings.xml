@@ -111,5 +111,7 @@
     <string name="drawer_close">Slider Menu Closed</string>
     <string name="drawer_content_on">0</string>
     <string name="drawer_content_off">2</string>
+    <string name="welcome">Bienvenid@!</string>
+    <string name="tv_name"></string>
 
 </resources>

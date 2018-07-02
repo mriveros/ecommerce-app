@@ -41,6 +41,7 @@ import java.io.InputStreamReader;
 import java.net.MalformedURLException;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
+import com.mriveros.ecommerceapp.Config;
 
 public class ActivityCart extends AppCompatActivity {
 

@@ -12,6 +12,7 @@ import android.widget.TextView;
 import com.mriveros.ecommerceapp.activities.ActivityMenuList;
 import com.mriveros.ecommerce.R;
 import com.squareup.picasso.Picasso;
+import com.mriveros.ecommerceapp.Config;
 
 public class AdapterMenuList extends BaseAdapter {
 

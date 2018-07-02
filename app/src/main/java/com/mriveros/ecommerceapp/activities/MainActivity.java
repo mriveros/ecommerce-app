@@ -22,7 +22,6 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.onesignal.OneSignal;
 import com.mriveros.ecommerce.R;
 import com.mriveros.ecommerceapp.analytics.Analytics;
@@ -31,6 +30,10 @@ import com.mriveros.ecommerceapp.utilities.DBHelper;
 import com.mriveros.ecommerceapp.utilities.utils;
 import com.mriveros.ecommerceapp.Session;
 import java.io.IOException;
+import android.content.SharedPreferences;
+import android.view.View;
+import android.support.design.widget.NavigationView;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -43,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
     FragmentTransaction mFragmentTransaction;
     static final String TAG = "MainActivity";
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,8 +54,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Intent intent = getIntent();
         String username = intent.getStringExtra("username");
-        session = new Session(getApplicationContext());
+        session = new Session(getApplicationContext()); //in oncreate
         session.setusername(username);
+
+
         OneSignal.idsAvailable(new OneSignal.IdsAvailableHandler() {
             @Override
             public void idsAvailable(String userId, String registrationId) {
@@ -74,6 +80,11 @@ public class MainActivity extends AppCompatActivity {
 
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         mNavigationView = (NavigationView) findViewById(R.id.main_drawer);
+
+        //View navHeaderView = mNavigationView.inflateHeaderView(R.layout.nav_drawer_header);
+        View navHeaderView =  mNavigationView.getHeaderView(0);
+        TextView headerUserName = (TextView) navHeaderView.findViewById(R.id.tx_name);
+        headerUserName.setText(username);
 
         mFragmentManager = getSupportFragmentManager();
         mFragmentTransaction = mFragmentManager.beginTransaction();

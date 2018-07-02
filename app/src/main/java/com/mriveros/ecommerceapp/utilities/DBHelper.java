@@ -14,7 +14,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.ArrayList;
-
+import com.mriveros.ecommerceapp.Config;
 public class DBHelper extends SQLiteOpenHelper{
 	
 	String DB_PATH;

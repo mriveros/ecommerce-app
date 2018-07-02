@@ -12,6 +12,7 @@ import android.widget.TextView;
 import com.mriveros.ecommerceapp.activities.ActivityMenuCategory;
 import com.mriveros.ecommerce.R;
 import com.squareup.picasso.Picasso;
+import com.mriveros.ecommerceapp.Config;
 
 // adapter class for custom category list
 public class AdapterCategoryList extends BaseAdapter {

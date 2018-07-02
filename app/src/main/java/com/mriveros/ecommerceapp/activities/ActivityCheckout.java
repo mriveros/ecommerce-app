@@ -58,6 +58,8 @@ import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
+import com.mriveros.ecommerceapp.Config;
+
 //import android.widget.CheckBox;
 
 public class ActivityCheckout extends AppCompatActivity {

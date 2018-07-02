@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.GridView;
+import android.widget.TextView;
 
 import com.mriveros.ecommerceapp.activities.ActivityAbout;
 import com.mriveros.ecommerceapp.activities.ActivityCart;
@@ -20,7 +21,6 @@ import com.mriveros.ecommerceapp.activities.ActivityProfile;
 import com.mriveros.ecommerce.R;
 import com.mriveros.ecommerceapp.adapters.AdapaterGridView;
 import com.mriveros.ecommerceapp.adapters.AdapterGridViewItem;
-
 import java.util.ArrayList;
 
 public class FragmentHome extends Fragment implements OnItemClickListener {
@@ -28,9 +28,9 @@ public class FragmentHome extends Fragment implements OnItemClickListener {
     GridView gridview;
     AdapaterGridView gridviewAdapter;
     ArrayList<AdapterGridViewItem> data = new ArrayList<AdapterGridViewItem>();
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+         super.onCreate(savedInstanceState);
 
         View v = inflater.inflate(R.layout.fragment_home, container, false);
 
