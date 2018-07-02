@@ -62,8 +62,8 @@ public class LoginActivity extends AppCompatActivity {
                                 LoginActivity.this.startActivity(intent);
                             } else {
                                 AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);
-                                builder.setMessage("Login Failed")
-                                        .setNegativeButton("Retry", null)
+                                builder.setMessage("Error en el Login")
+                                        .setNegativeButton("Volver", null)
                                         .create()
                                         .show();
                             }
