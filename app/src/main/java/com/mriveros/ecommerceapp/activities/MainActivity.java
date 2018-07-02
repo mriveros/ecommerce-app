@@ -82,9 +82,9 @@ public class MainActivity extends AppCompatActivity {
         mNavigationView = (NavigationView) findViewById(R.id.main_drawer);
 
         //View navHeaderView = mNavigationView.inflateHeaderView(R.layout.nav_drawer_header);
-        View navHeaderView =  mNavigationView.getHeaderView(0);
-        TextView headerUserName = (TextView) navHeaderView.findViewById(R.id.tx_name);
-        headerUserName.setText(username);
+        //View navHeaderView =  mNavigationView.getHeaderView(0);
+        //TextView headerUserName = (TextView) navHeaderView.findViewById(R.id.tx_name);
+        //headerUserName.setText(username);
 
         mFragmentManager = getSupportFragmentManager();
         mFragmentTransaction = mFragmentManager.beginTransaction();

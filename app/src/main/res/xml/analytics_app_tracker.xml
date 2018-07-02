@@ -3,16 +3,17 @@
     tools:ignore="TypographyDashes">
 
     <!-- Analytics Tracking Id -->
-    <string name="ga_trackingId">UA-65652141-8</string>
+    <!--string name="ga_trackingId">UA-65652141-8</string-->
+    <string name="ga_trackingId">UA-121731862-1</string>
 
     <string name="ga_sampleFrequency">100.0</string>
     <bool name="ga_autoActivityTracking">true</bool>
     <bool name="ga_reportUncaughtExceptions">true</bool>
     <integer name="ga_sessionTimeout">-1</integer>
 
-    <screenName name="com.mriveros.ecommerceapp.activities.MainActivity">MainActivity</screenName>
-    <screenName name="com.mriveros.ecommerceapp.activities.ActivityMenuCategory">Product Category</screenName>
-    <screenName name="com.mriveros.ecommerceapp.activities.ActivityMenuList">Product List</screenName>
-    <screenName name="com.mriveros.ecommerceapp.activities.ActivityMenuDetail">Product Details</screenName>
+    <screenName name="com.mriveros.ecommerceapp.activities.MainActivity">Menu Principal</screenName>
+    <screenName name="com.mriveros.ecommerceapp.activities.ActivityMenuCategory">Categorias de Productos</screenName>
+    <screenName name="com.mriveros.ecommerceapp.activities.ActivityMenuList">Lista de Productos</screenName>
+    <screenName name="com.mriveros.ecommerceapp.activities.ActivityMenuDetail">Detalle de Producto</screenName>
 
 </resources>
