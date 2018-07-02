@@ -1,5 +1,4 @@
 package com.mriveros.ecommerceapp.activities;
-
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
@@ -15,7 +14,7 @@ import com.mriveros.ecommerceapp.fragments.FragmentInfoTab1_HowToBuy;
 import com.mriveros.ecommerceapp.fragments.FragmentInfoTab2_Payment;
 import com.mriveros.ecommerceapp.fragments.FragmentInfoTab3_ContactUs;
 
-public class ActivityInformation extends AppCompatActivity {
+public class ActivityInformation extends AppCompatActivity  {
 
     public static TabLayout tabLayout;
     public static ViewPager viewPager;
@@ -106,4 +105,3 @@ public class ActivityInformation extends AppCompatActivity {
     }
 
 }
-

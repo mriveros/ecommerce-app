@@ -52,10 +52,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_main);
-        Intent intent = getIntent();
-        String username = intent.getStringExtra("username");
-        session = new Session(getApplicationContext()); //in oncreate
-        session.setusername(username);
+       // Intent intent = getIntent();
+       // String username = intent.getStringExtra("username");
+       // session = new Session(getApplicationContext()); //in oncreate
+       // session.setusername(username);
 
 
         OneSignal.idsAvailable(new OneSignal.IdsAvailableHandler() {
