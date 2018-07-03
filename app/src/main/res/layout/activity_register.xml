@@ -15,7 +15,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:hint="Name" />
+        android:hint="Nombre" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -26,7 +26,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:hint="Username" />
+        android:hint="Usuario" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -63,5 +63,5 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:hint="Age" />
+        android:hint="Edad" />
 </RelativeLayout>
