@@ -59,7 +59,10 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 import com.mriveros.ecommerceapp.Config;
-
+import android.location.Criteria;
+import android.location.Location;
+import android.location.LocationListener;
+import android.location.LocationManager;
 //import android.widget.CheckBox;
 
 public class ActivityCheckout extends AppCompatActivity {
@@ -72,7 +75,9 @@ public class ActivityCheckout extends AppCompatActivity {
 	ProgressBar prgLoading;
 	TextView txtAlert;
 	Spinner spinner;
-	
+	String latitude;
+	String longitude;
+	String address;
 	// declare dbhelper object
 	public static DBHelper dbhelper;
 	ArrayList<ArrayList<Object>> data;
@@ -102,7 +107,9 @@ public class ActivityCheckout extends AppCompatActivity {
 	String Result;
 	String TaxCurrencyAPI;
 	int IOConnect = 0;
-	
+
+	private LocationManager locationManager;
+	private String provider;
 	
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -117,6 +124,25 @@ public class ActivityCheckout extends AppCompatActivity {
 			getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 			getSupportActionBar().setTitle(R.string.title_checkout);
 		}
+		//-----------------------Using Location manger for GPS--------------------------------------
+		// Get the location manager
+		locationManager = (LocationManager) getSystemService(this.LOCATION_SERVICE);
+		// Define the criteria how to select the locatioin provider -> use
+		// default
+		Criteria criteria = new Criteria();
+		provider = locationManager.getBestProvider(criteria, false);
+		Location location = locationManager.getLastKnownLocation(provider);
+
+		// Initialize the location fields
+		if (location != null) {
+			System.out.println("Provider " + provider + " has been selected.");
+			//onLocationChanged(location);
+		} else {
+			latitude = "Location not available";
+			longitude = "Location not available";
+		}
+		//------------------------------------------------------------------------------------------
+
 
         edtName = (EditText) findViewById(R.id.edtName);
         edtName2 = (EditText) findViewById(R.id.edtName2);
@@ -240,6 +266,11 @@ public class ActivityCheckout extends AppCompatActivity {
 				}
 			}
 		});
+
+
+
+
+
     }
     
     @Override

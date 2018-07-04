@@ -49,7 +49,7 @@
 
     <!--menu, cart and order-->
     <string name="search">Búsqueda Menu</string>
-    <string name="confirm">Confirmacion</string>
+    <string name="confirm">Confirmación</string>
     <string name="number_order">Cantidad : </string>
     <string name="order">Orden</string>
     <string name="detail">Detalle</string>
@@ -57,7 +57,7 @@
     <string name="clear_order">Borrar todo el order</string>
     <string name="clear_all_order">Desea Borrar todo el order?</string>
     <string name="clear_one_order">Desea Borrar esta orden?</string>
-    <string name="db_exist_alert">Do you want to remove your previous order?</string>
+    <string name="db_exist_alert">Desea Borrar la Orden Anterior de su Carrito?</string>
     <string name="no_order">Tu carrito esta vacío, Por favor ordene primero.</string>
     <string name="option_yes">Si</string>
     <string name="option_no">No</string>

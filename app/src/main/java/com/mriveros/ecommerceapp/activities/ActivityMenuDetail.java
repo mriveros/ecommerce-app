@@ -226,7 +226,7 @@ public class ActivityMenuDetail extends AppCompatActivity {
                 // when add button clicked add menu to order table in database
                 if (!temp.equalsIgnoreCase("")) {
                     quantity = Integer.parseInt(temp);
-                    Toast.makeText(getApplicationContext(), "Success add product to cart", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Agregado al Carrito", Toast.LENGTH_SHORT).show();
 
                     if (dbhelper.isDataExist(Menu_ID)) {
                         dbhelper.updateData(Menu_ID, quantity, (Menu_price * quantity));
@@ -458,7 +458,7 @@ public class ActivityMenuDetail extends AppCompatActivity {
 
         @Override
         protected void onPostExecute(String args) {
-            Toast.makeText(getApplicationContext(), "Image Saved Succesfully", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "Imagen guardada Exitosamente", Toast.LENGTH_SHORT).show();
             pDialog.dismiss();
         }
     }
