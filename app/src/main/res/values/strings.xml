@@ -10,6 +10,7 @@
     <string name="menu_profile">Perfil</string>
     <string name="menu_info">Información</string>
     <string name="menu_about">Acerca de</string>
+    <string name="exit">Salir</string>
     <string name="menu_share">Comparte</string>
     <string name="menu_contact">Contacto</string>
 
@@ -113,5 +114,8 @@
     <string name="drawer_content_off">2</string>
     <string name="welcome">Bienvenid@!</string>
     <string name="tv_name"></string>
+    <string name="pause">pausa!</string>
+    <string name="resume">seguir!</string>
+
 
 </resources>

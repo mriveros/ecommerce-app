@@ -48,7 +48,6 @@ import org.apache.http.protocol.HTTP;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -63,10 +62,15 @@ import android.location.Criteria;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
-//import android.widget.CheckBox;
+import android.location.Geocoder;
+import android.location.Address;
+import java.util.Locale;
+
+
+
 
 public class ActivityCheckout extends AppCompatActivity {
-	
+
 	Button btnSend;
 	static Button btnDate;
 	static Button btnTime;
@@ -75,8 +79,9 @@ public class ActivityCheckout extends AppCompatActivity {
 	ProgressBar prgLoading;
 	TextView txtAlert;
 	Spinner spinner;
-	String latitude;
-	String longitude;
+	double latitude;
+	double longitude;
+	double precision;
 	String address;
 	// declare dbhelper object
 	public static DBHelper dbhelper;
@@ -86,7 +91,8 @@ public class ActivityCheckout extends AppCompatActivity {
 	String Name, Name2, Date, Time, Phone, Date_n_Time, Alamat, Email, Kota, Provinsi;
 	String OrderList = "";
 	String Comment = "";
-
+	private LocationManager locManager;
+	private LocationListener locListener;
 	// declare static int variables to store date and time
 	private static int mYear;
 	private static int mMonth;
@@ -124,7 +130,9 @@ public class ActivityCheckout extends AppCompatActivity {
 			getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 			getSupportActionBar().setTitle(R.string.title_checkout);
 		}
+
 		//-----------------------Using Location manger for GPS--------------------------------------
+
 		// Get the location manager
 		locationManager = (LocationManager) getSystemService(this.LOCATION_SERVICE);
 		// Define the criteria how to select the locatioin provider -> use
@@ -136,10 +144,37 @@ public class ActivityCheckout extends AppCompatActivity {
 		// Initialize the location fields
 		if (location != null) {
 			System.out.println("Provider " + provider + " has been selected.");
+			latitude = location.getLatitude();
+			longitude = location.getLongitude() ;
+			//--------------------------------------------------------------------------------------
+			Geocoder geocoder = new Geocoder(this, Locale.getDefault());
+
+			try {
+				List<Address> addresses = geocoder.getFromLocation(latitude, longitude, 1);
+
+				if (addresses != null) {
+					Address returnedAddress = addresses.get(0);
+					StringBuilder strReturnedAddress = new StringBuilder();
+					for (int i = 0; i < returnedAddress.getMaxAddressLineIndex(); i++) {
+						strReturnedAddress.append(returnedAddress.getAddressLine(i)).append("");
+					}
+					address = strReturnedAddress.toString();
+				}
+				else {
+					address = "No Address returned!";
+				}
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+				address = "Canont get Address!";
+			}
+			//--------------------------------------------------------------------------------------
+
 			//onLocationChanged(location);
 		} else {
-			latitude = "Location not available";
-			longitude = "Location not available";
+			latitude = 0;
+			longitude = 0;
+			address = "Address not available";
 		}
 		//------------------------------------------------------------------------------------------
 
@@ -272,6 +307,8 @@ public class ActivityCheckout extends AppCompatActivity {
 
 
     }
+
+
     
     @Override
 	public boolean onCreateOptionsMenu(Menu menu) {
@@ -477,7 +514,7 @@ public class ActivityCheckout extends AppCompatActivity {
 		 protected Void doInBackground(Void... params) {
 		  // TODO Auto-generated method stub
 			 // send data to server and store result to variable
-			 Result = getRequest(Name, Alamat, Kota, Provinsi, Email, Name2, Date_n_Time, Phone, OrderList, Comment);
+			 Result = getRequest(Name, Alamat, Kota, Provinsi, Email, Name2, Date_n_Time, Phone, OrderList, Comment, latitude, longitude, address);
 		  return null;
 		 }
 
@@ -507,7 +544,7 @@ public class ActivityCheckout extends AppCompatActivity {
 	}
 	
     // method to post data to server
-	public String getRequest(String name, String alamat, String kota, String provinsi, String email, String name2, String date_n_time, String phone, String orderlist, String comment){
+	public String getRequest(String name, String alamat, String kota, String provinsi, String email, String name2, String date_n_time, String phone, String orderlist, String comment, Double latitude, Double longitude, String address){
 		String result = "";
 		
         HttpClient client = new DefaultHttpClient();
@@ -525,6 +562,9 @@ public class ActivityCheckout extends AppCompatActivity {
             nameValuePairs.add(new BasicNameValuePair("phone", phone));
             nameValuePairs.add(new BasicNameValuePair("order_list", orderlist));
             nameValuePairs.add(new BasicNameValuePair("comment", comment));
+			nameValuePairs.add(new BasicNameValuePair("latitude", latitude.toString()));
+			nameValuePairs.add(new BasicNameValuePair("longitude", longitude.toString()));
+			nameValuePairs.add(new BasicNameValuePair("address", address));
             request.setEntity(new UrlEncodedFormEntity(nameValuePairs,HTTP.UTF_8));
         	HttpResponse response = client.execute(request);
             result = request(response);
@@ -610,4 +650,5 @@ public class ActivityCheckout extends AppCompatActivity {
 		// Ignore orientation change to keep activity from restarting
 		super.onConfigurationChanged(newConfig);
 	}
+
 }

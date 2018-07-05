@@ -121,6 +121,10 @@ public class MainActivity extends AppCompatActivity {
                 if (menuItem.getItemId() == R.id.about) {
                     startActivity(new Intent(getApplicationContext(), ActivityAbout.class));
                 }
+                if (menuItem.getItemId() == R.id.exit) {
+                    finish();
+                    System.exit(0);
+                }
 
                 return false;
             }

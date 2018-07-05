@@ -32,5 +32,10 @@
             android:icon="@drawable/ic_drawer_about"
             android:title="@string/menu_about" />
 
+        <item
+            android:id="@+id/exit"
+            android:icon="@drawable/common_full_open_on_phone"
+            android:title="@string/exit" />
+
     </group>
 </menu>
