@@ -6,7 +6,7 @@
     <!--navigation drawer and home menu name-->
     <string name="menu_product">Productos</string>
     <string name="menu_cart">Carrito</string>
-    <string name="menu_checkout">Datos de Pago</string>
+    <string name="menu_checkout">Realizar Pago</string>
     <string name="menu_profile">Perfil</string>
     <string name="menu_info">Información</string>
     <string name="menu_about">Acerca de</string>
