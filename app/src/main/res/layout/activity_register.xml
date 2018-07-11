@@ -5,63 +5,116 @@
     android:padding="@dimen/activity_horizontal_margin">
 
     <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
         android:id="@+id/etName"
+        android:layout_width="342dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:hint="Nombre" />
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Nombres"
+        android:inputType="textPersonName" />
 
     <EditText
-        android:layout_width="wrap_content"
+        android:id="@+id/etLastname"
+        android:layout_width="348dp"
         android:layout_height="wrap_content"
-        android:id="@+id/etUsername"
         android:layout_below="@+id/etName"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Apellidos"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etBirthdate"
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etLastname"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Fecha Nacimiento"
+        android:inputType="date" />
+
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="349dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etBirthdate"
+        android:layout_centerHorizontal="true"
         android:hint="Usuario" />
 
     <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPassword"
-        android:ems="10"
         android:id="@+id/etPassword"
-        android:layout_below="@+id/etUsername"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:hint="Password" />
-
-    <Button
-        android:layout_width="wrap_content"
+        android:layout_width="349dp"
         android:layout_height="wrap_content"
-        android:text="Register"
-        android:id="@+id/bRegister"
-        android:layout_below="@+id/etAge"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/etAge"
-        android:layout_alignEnd="@+id/etAge" />
+        android:layout_alignStart="@+id/etName"
+        android:layout_below="@+id/etUsername"
+        android:layout_marginStart="-3dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
 
     <EditText
-        android:layout_width="wrap_content"
+        android:id="@+id/etAddress"
+        android:layout_width="348dp"
         android:layout_height="wrap_content"
-        android:inputType="number"
+        android:layout_below="@+id/etCity"
+        android:layout_centerHorizontal="true"
         android:ems="10"
-        android:id="@+id/etAge"
+        android:hint="Dirección"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/etCity"
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/etPassword"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:hint="Edad" />
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Ciudad"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/etBarrio"
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etAddress"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Barrio"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/etPhone"
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etBarrio"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Teléfono"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/etMail"
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etPhone"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
+
+
+    <Button
+        android:id="@+id/bRegister"
+        android:layout_width="236dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/ColorPrimary"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="13dp"
+        android:text="Registrarse" />
+
+
 </RelativeLayout>
