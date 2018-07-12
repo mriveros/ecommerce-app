@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="17dp"
         android:ems="10"
         android:hint="Nombres"
         android:inputType="textPersonName" />
@@ -25,30 +25,32 @@
         android:hint="Apellidos"
         android:inputType="textPersonName" />
 
-    <EditText
+    <Button
         android:id="@+id/etBirthdate"
-        android:layout_width="348dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/etLastname"
-        android:layout_centerHorizontal="true"
-        android:ems="10"
-        android:hint="Fecha Nacimiento"
-        android:inputType="date" />
+        android:layout_width="341dp"
+        android:layout_height="36dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/etName"
+        android:layout_marginTop="113dp"
+        android:background="@color/ColorPrimary"
+        android:text="@string/birtdate"
+        android:textColor="@color/white" />
 
 
     <EditText
         android:id="@+id/etUsername"
         android:layout_width="349dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/etBirthdate"
+        android:layout_above="@+id/etPassword"
         android:layout_centerHorizontal="true"
-        android:hint="Usuario" />
+        android:hint="Usuario"
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/etPassword"
         android:layout_width="349dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/etUsername"
+        android:layout_above="@+id/etAddress"
         android:layout_centerHorizontal="true"
         android:ems="10"
         android:hint="Password"

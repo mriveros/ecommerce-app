@@ -116,6 +116,7 @@
     <string name="tv_name"></string>
     <string name="pause">pausa!</string>
     <string name="resume">seguir!</string>
+    <string name="birtdate">Fecha Nacimiento</string>
 
 
 </resources>
