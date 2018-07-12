@@ -14,8 +14,17 @@ public class RegisterRequest extends StringRequest {
         super(Method.POST, REGISTER_REQUEST_URL, listener, null);
         params = new HashMap<>();
         params.put("name", name);
+        params.put("lastname", lastname);
+        params.put("birtdate", birtdate);
         params.put("username", username);
         params.put("password", password);
+        params.put("address", address);
+        params.put("city", city);
+        params.put("neigboorhood", neigborhood);
+        params.put("phone", phone);
+        params.put("mail", mail);
+
+
     }
 
     @Override
