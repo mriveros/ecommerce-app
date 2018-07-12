@@ -3,7 +3,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="@dimen/activity_horizontal_margin">
-
     <EditText
         android:id="@+id/etName"
         android:layout_width="342dp"
@@ -30,12 +29,18 @@
         android:layout_width="341dp"
         android:layout_height="36dp"
         android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/etName"
         android:layout_marginTop="113dp"
         android:background="@color/ColorPrimary"
         android:text="@string/birtdate"
         android:textColor="@color/white" />
-
+    <EditText
+        android:id="@+id/etdate"
+        android:layout_width="349dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/etPassword"
+        android:layout_centerHorizontal="true"
+        android:hint="Usuario"
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/etUsername"

@@ -1,4 +1,4 @@
-package com.mriveros.ecommerceapp;
+package com.mriveros.ecommerceapp.activities;
 
 import android.app.AlertDialog;
 import android.content.Intent;
@@ -13,7 +13,6 @@ import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.toolbox.Volley;
 import com.mriveros.ecommerce.R;
-import com.mriveros.ecommerceapp.activities.MainActivity;
 
 import org.json.JSONException;
 import org.json.JSONObject;

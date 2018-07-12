@@ -28,11 +28,10 @@ import com.mriveros.ecommerceapp.analytics.Analytics;
 import com.mriveros.ecommerceapp.fragments.FragmentHome;
 import com.mriveros.ecommerceapp.utilities.DBHelper;
 import com.mriveros.ecommerceapp.utilities.utils;
-import com.mriveros.ecommerceapp.Session;
+
 import java.io.IOException;
-import android.content.SharedPreferences;
+
 import android.view.View;
-import android.support.design.widget.NavigationView;
 
 
 public class MainActivity extends AppCompatActivity {

@@ -1,4 +1,4 @@
-package com.mriveros.ecommerceapp;
+package com.mriveros.ecommerceapp.activities;
 
 import com.android.volley.Response;
 import com.android.volley.toolbox.StringRequest;

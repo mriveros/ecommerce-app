@@ -1,8 +1,9 @@
-package com.mriveros.ecommerceapp;
+package com.mriveros.ecommerceapp.activities;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
 import android.support.v7.app.AppCompatActivity;
@@ -10,28 +11,24 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
-
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.toolbox.Volley;
 import com.mriveros.ecommerce.R;
-import com.mriveros.ecommerceapp.activities.ActivityCheckout;
-
 import org.json.JSONException;
 import org.json.JSONObject;
 import android.content.DialogInterface;
 import android.view.View.OnClickListener;
 import android.app.DatePickerDialog;
 import android.widget.Toast;
-
 import java.util.Calendar;
 
 public class RegisterActivity extends AppCompatActivity {
 
     public static final String DATE_DIALOG_ID = "datePicker";
-    String Date_n_Time, Date;
+    String Date;
     // declare static int variables to store date and time
-    static Button etBirthdate;
+    public static Button etBirthdate;
     private static int mYear;
     private static int mMonth;
     private static int mDay;
@@ -41,10 +38,9 @@ public class RegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-
         final EditText etName = (EditText) findViewById(R.id.etName);
         final EditText etLastname = (EditText) findViewById(R.id.etLastname);
-        final Button etBirthdate = (Button) findViewById(R.id.etBirthdate);
+        etBirthdate = (Button) findViewById(R.id.etBirthdate);
         final EditText etUsername = (EditText) findViewById(R.id.etUsername);
         final EditText etPassword = (EditText) findViewById(R.id.etPassword);
         final EditText etAddress = (EditText) findViewById(R.id.etAddress);
@@ -125,13 +121,14 @@ public class RegisterActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // TODO Auto-generated method stub
                 // show date picker dialog
-                DialogFragment newFragment = new RegisterActivity.DatePickerFragment();
+                DialogFragment newFragment = new DatePickerFragment();
                 newFragment.show(getSupportFragmentManager(), DATE_DIALOG_ID);
             }
         });
 
 
     }
+
     // method to create date picker dialog
     public static class DatePickerFragment extends DialogFragment
             implements DatePickerDialog.OnDateSetListener {
@@ -162,4 +159,14 @@ public class RegisterActivity extends AppCompatActivity {
         }
     }
 
+    @Override
+    public void onConfigurationChanged(final Configuration newConfig)
+    {
+        // Ignore orientation change to keep activity from restarting
+        super.onConfigurationChanged(newConfig);
+    }
+
+
+
 }
+

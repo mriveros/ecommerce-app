@@ -6,7 +6,6 @@ import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
 
 import com.mriveros.ecommerce.R;
-import com.mriveros.ecommerceapp.LoginActivity;
 
 public class ActivitySplash extends AppCompatActivity {
 
