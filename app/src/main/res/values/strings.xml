@@ -105,7 +105,7 @@
     <string name="button_send">Enviar</string>
 
     <!--nav drawer header image-->
-    <!--set "@string/drawer_content_on" to enable navigation drawer header image-->
+    <!--s "@string/drawer_content_on" to enable navigation drawer header image-->
     <!--set "@string/drawer_content_off" to disable navigation drawer header image-->
     <string name="drawer_visibility">@string/drawer_content_on</string>
     <string name="drawer_open">Slider Menu Opened</string>

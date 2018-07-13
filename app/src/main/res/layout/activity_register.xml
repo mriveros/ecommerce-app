@@ -33,14 +33,6 @@
         android:background="@color/ColorPrimary"
         android:text="@string/birtdate"
         android:textColor="@color/white" />
-    <EditText
-        android:id="@+id/etdate"
-        android:layout_width="349dp"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/etPassword"
-        android:layout_centerHorizontal="true"
-        android:hint="Usuario"
-        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/etUsername"

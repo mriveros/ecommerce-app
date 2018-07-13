@@ -23,6 +23,8 @@ import android.app.DatePickerDialog;
 import android.widget.Toast;
 import java.util.Calendar;
 
+
+
 public class RegisterActivity extends AppCompatActivity {
 
     public static final String DATE_DIALOG_ID = "datePicker";
@@ -32,6 +34,7 @@ public class RegisterActivity extends AppCompatActivity {
     private static int mYear;
     private static int mMonth;
     private static int mDay;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -107,6 +110,7 @@ public class RegisterActivity extends AppCompatActivity {
                     Toast.makeText(RegisterActivity.this, R.string.form_alert, Toast.LENGTH_SHORT).show();
                 }
                 else{
+
                     queue.add(registerRequest);
                 }
 
