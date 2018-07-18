@@ -55,6 +55,7 @@ public class LoginActivity extends AppCompatActivity {
                             boolean success = jsonResponse.getBoolean("success");
 
                             if (success) {
+                                pd.dismiss();
                                 String name = jsonResponse.getString("name");
                                 //int age = jsonResponse.getInt("age");
                                 Intent intent = new Intent(LoginActivity.this, MainActivity.class);
@@ -62,7 +63,7 @@ public class LoginActivity extends AppCompatActivity {
                                 //intent.putExtra("age", age);
                                 intent.putExtra("username", username);
                                 LoginActivity.this.startActivity(intent);
-                                pd.dismiss();
+
                             } else {
                                 pd.dismiss();
                                 AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);

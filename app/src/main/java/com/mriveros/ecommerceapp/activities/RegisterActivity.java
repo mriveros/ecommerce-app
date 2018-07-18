@@ -2,6 +2,7 @@ package com.mriveros.ecommerceapp.activities;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
@@ -34,7 +35,7 @@ public class RegisterActivity extends AppCompatActivity {
     private static int mYear;
     private static int mMonth;
     private static int mDay;
-
+    private ProgressDialog pd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,6 +58,7 @@ public class RegisterActivity extends AppCompatActivity {
         bRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                pd = ProgressDialog.show(RegisterActivity.this,"Registro...","Registrando Usuario..por favor espere...");
                 final String name = etName.getText().toString();
                 final String lastname = etLastname.getText().toString();
                 final String birtdate = etBirthdate.getText().toString();
@@ -78,6 +80,7 @@ public class RegisterActivity extends AppCompatActivity {
                             JSONObject jsonResponse = new JSONObject(response);
                             boolean success = jsonResponse.getBoolean("success");
                             if (success) {
+                                pd.dismiss();
                                 AlertDialog.Builder builder_succes = new AlertDialog.Builder(RegisterActivity.this);
                                 builder_succes.setMessage("Usuario Registrado Exitosamente!")
                                         .setPositiveButton("Volver", new DialogInterface.OnClickListener() {
@@ -91,6 +94,7 @@ public class RegisterActivity extends AppCompatActivity {
                                         .show();
 
                             } else {
+                                pd.dismiss();
                                 AlertDialog.Builder builder = new AlertDialog.Builder(RegisterActivity.this);
                                 builder.setMessage("Registro Fallido")
                                         .setNegativeButton("Volver", null)
