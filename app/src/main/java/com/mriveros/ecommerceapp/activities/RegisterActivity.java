@@ -28,7 +28,7 @@ import java.util.Calendar;
 public class RegisterActivity extends AppCompatActivity {
 
     public static final String DATE_DIALOG_ID = "datePicker";
-    String Date;
+
     // declare static int variables to store date and time
     public static Button etBirthdate;
     private static int mYear;
@@ -103,10 +103,10 @@ public class RegisterActivity extends AppCompatActivity {
                     }
                 };
 
-                RegisterRequest registerRequest = new RegisterRequest(name, lastname, Date, username, password, address, city, neigborhood, phone, mail, responseListener);
+                RegisterRequest registerRequest = new RegisterRequest(name, lastname, birtdate, username, password, address, city, neigborhood, phone, mail, responseListener);
                 RequestQueue queue = Volley.newRequestQueue(RegisterActivity.this);
                 if(name.equalsIgnoreCase("") || lastname.equalsIgnoreCase("") || birtdate.equalsIgnoreCase("") || username.equalsIgnoreCase("") || password.equalsIgnoreCase("") || address.equalsIgnoreCase("") ||
-                        Date.equalsIgnoreCase(getString(R.string.checkout_set_date)) ||neigborhood.equalsIgnoreCase("") || phone.equalsIgnoreCase("") || mail.equalsIgnoreCase("")){
+                        birtdate.equalsIgnoreCase(getString(R.string.checkout_set_date)) ||neigborhood.equalsIgnoreCase("") || phone.equalsIgnoreCase("") || mail.equalsIgnoreCase("")){
                     Toast.makeText(RegisterActivity.this, R.string.form_alert, Toast.LENGTH_SHORT).show();
                 }
                 else{

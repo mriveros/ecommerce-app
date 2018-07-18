@@ -117,6 +117,7 @@
     <string name="pause">pausa!</string>
     <string name="resume">seguir!</string>
     <string name="birtdate">Fecha Nacimiento</string>
+    <string name="iniciar_sesion">Iniciar Sesión</string>
 
 
 </resources>
