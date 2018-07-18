@@ -170,7 +170,7 @@ public class ActivityCheckout extends AppCompatActivity {
 			}
 			//--------------------------------------------------------------------------------------
 
-			//onLocationChanged(location);
+
 		} else {
 			latitude = 0;
 			longitude = 0;
