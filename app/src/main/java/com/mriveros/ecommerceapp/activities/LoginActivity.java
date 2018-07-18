@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-
+import android.app.ProgressDialog;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.toolbox.Volley;
@@ -18,6 +18,8 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 public class LoginActivity extends AppCompatActivity {
+
+    private ProgressDialog pd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +45,7 @@ public class LoginActivity extends AppCompatActivity {
                 final String username = etUsername.getText().toString();
                 final String password = etPassword.getText().toString();
 
+                pd = ProgressDialog.show(LoginActivity.this,"Login...","Iniciando Sesión..por favor espere...");
                 // Response received from the server
                 Response.Listener<String> responseListener = new Response.Listener<String>() {
                     @Override
@@ -59,12 +62,15 @@ public class LoginActivity extends AppCompatActivity {
                                 //intent.putExtra("age", age);
                                 intent.putExtra("username", username);
                                 LoginActivity.this.startActivity(intent);
+                                pd.dismiss();
                             } else {
+                                pd.dismiss();
                                 AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);
                                 builder.setMessage("Error en el Login")
                                         .setNegativeButton("Volver", null)
                                         .create()
                                         .show();
+
                             }
 
                         } catch (JSONException e) {
