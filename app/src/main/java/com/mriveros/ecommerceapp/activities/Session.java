@@ -24,17 +24,39 @@ public class Session {
         prefs.edit().putString("username", username).commit();
     }
 
-    public void setIdUsername(String id) {
-        prefs.edit().putString("id", id).commit();
+    public void setIdUsername(int id) {
+        prefs.edit().putInt("id", id).commit();
     }
+
+    public void setPhone (String phone){ prefs.edit().putString("phone", phone).commit(); }
+
+    public void setEmail (String email){ prefs.edit().putString("email", email).commit(); }
+
+    public void setAddress (String address){ prefs.edit().putString("address", address).commit(); }
 
     public String getusername() {
         String username = prefs.getString("username","");
         return username;
     }
 
-    public String getIdUsername() {
-        String id = prefs.getString("id","");
+    public int getIdUsername() {
+        int id = prefs.getInt("id",0);
         return id;
     }
+
+    public String getPhone(){
+        String phone = prefs.getString("phone", "");
+        return phone;
+    }
+
+    public String getEmail(){
+        String email = prefs.getString("email", "");
+        return email;
+    }
+
+    public String getAddress(){
+        String address = prefs.getString("address","");
+        return address;
+    }
+
 }

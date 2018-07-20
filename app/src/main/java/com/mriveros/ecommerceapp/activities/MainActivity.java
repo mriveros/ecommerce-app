@@ -53,8 +53,17 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Intent intent = getIntent();
         String username = intent.getStringExtra("username");
+        String idUser = intent.getStringExtra("id");
+        String phone = intent.getStringExtra("phone");
+        String email = intent.getStringExtra("email");
+        String address = intent.getStringExtra("address");
+
         session = new Session(getApplicationContext()); //in oncreate
+        session.setIdUsername(Integer.parseInt(idUser));
         session.setusername(username);
+        session.setPhone(phone);
+        session.setEmail(email);
+        session.setAddress(address);
 
 
         OneSignal.idsAvailable(new OneSignal.IdsAvailableHandler() {

@@ -57,11 +57,17 @@ public class LoginActivity extends AppCompatActivity {
                             if (success) {
                                 pd.dismiss();
                                 String name = jsonResponse.getString("name");
-                                //int age = jsonResponse.getInt("age");
+                                String id = jsonResponse.getString("id");
+                                String phone = jsonResponse.getString("phone");
+                                String email= jsonResponse.getString("email");
+                                String address= jsonResponse.getString("address");
                                 Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                                 intent.putExtra("name", name);
-                                //intent.putExtra("age", age);
-                                intent.putExtra("username", username);
+                                intent.putExtra("id", id);
+                                intent.putExtra("phone", phone);
+                                intent.putExtra("email", email);
+                                intent.putExtra("address", address);
+                                intent.putExtra("username", name);
                                 LoginActivity.this.startActivity(intent);
 
                             } else {

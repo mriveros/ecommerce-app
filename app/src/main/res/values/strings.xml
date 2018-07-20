@@ -65,7 +65,7 @@
 
     <!--checkout menu-->
     <string name="checkout_your_name">Tu Nombre</string>
-    <string name="checkout_address">Tu Dirección</string>
+    <string name="checkout_address">Dirección de Entrega</string>
     <string name="checkout_city">Tu Ciudad</string>
     <string name="checkout_province">Tu Barrio</string>
     <string name="checkout_email">Tu Email</string>

@@ -70,7 +70,7 @@ import java.util.Locale;
 
 
 public class ActivityCheckout extends AppCompatActivity {
-
+	private Session session;
 	Button btnSend;
 	static Button btnDate;
 	static Button btnTime;
@@ -130,6 +130,13 @@ public class ActivityCheckout extends AppCompatActivity {
 			getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 			getSupportActionBar().setTitle(R.string.title_checkout);
 		}
+		// get session variable
+		session = new Session(getApplicationContext()); //in oncreate
+
+		int idUser = session.getIdUsername();
+		String phone = session.getPhone();
+		String email = session.getEmail();
+		String address_delivery = session.getAddress();
 
 		//-----------------------Using Location manger for GPS--------------------------------------
 
@@ -179,12 +186,14 @@ public class ActivityCheckout extends AppCompatActivity {
 		//------------------------------------------------------------------------------------------
 
 
-        edtName = (EditText) findViewById(R.id.edtName);
+        //edtName = (EditText) findViewById(R.id.edtName);
         edtName2 = (EditText) findViewById(R.id.edtName2);
         edtEmail = (EditText) findViewById(R.id.edtEmail);
+		edtEmail.setText(email);
         btnDate = (Button) findViewById(R.id.btnDate);
         btnTime = (Button) findViewById(R.id.btnTime);
         edtPhone = (EditText) findViewById(R.id.edtPhone);
+        edtPhone.setText(phone);
         edtOrderList = (EditText) findViewById(R.id.edtOrderList);
         edtComment = (EditText) findViewById(R.id.edtComment);
         btnSend = (Button) findViewById(R.id.btnSend);
@@ -192,8 +201,9 @@ public class ActivityCheckout extends AppCompatActivity {
         prgLoading = (ProgressBar) findViewById(R.id.prgLoading);
         txtAlert = (TextView) findViewById(R.id.txtAlert);       
         edtAlamat = (EditText) findViewById(R.id.edtAlamat);
-        edtKota = (EditText) findViewById(R.id.edtKota);
-        edtProvinsi = (EditText) findViewById(R.id.edtProvinsi);
+		edtAlamat.setText(address_delivery);
+        //edtKota = (EditText) findViewById(R.id.edtKota);
+        //edtProvinsi = (EditText) findViewById(R.id.edtProvinsi);
         
         Spinner spinner = (Spinner) findViewById(R.id.spinner1);
 	     // Create an ArrayAdapter using the string array and a default spinner layout
@@ -281,6 +291,7 @@ public class ActivityCheckout extends AppCompatActivity {
 				Name = edtName.getText().toString();
 				Alamat = edtAlamat.getText().toString();
 				Kota = edtKota.getText().toString();
+				
 				Provinsi = edtProvinsi.getText().toString();
 				Email = edtEmail.getText().toString();
 				Name2 = edtName2.getText().toString();
@@ -552,10 +563,10 @@ public class ActivityCheckout extends AppCompatActivity {
         
         try{
         	List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(6);
-        	nameValuePairs.add(new BasicNameValuePair("name", name));
+        	//nameValuePairs.add(new BasicNameValuePair("name", name));
         	nameValuePairs.add(new BasicNameValuePair("alamat", alamat));
-        	nameValuePairs.add(new BasicNameValuePair("kota", kota));
-        	nameValuePairs.add(new BasicNameValuePair("provinsi", provinsi));
+        	//nameValuePairs.add(new BasicNameValuePair("kota", kota));
+        	//nameValuePairs.add(new BasicNameValuePair("provinsi", provinsi));
         	nameValuePairs.add(new BasicNameValuePair("email", email));
             nameValuePairs.add(new BasicNameValuePair("name2", name2));
             nameValuePairs.add(new BasicNameValuePair("date_n_time", date_n_time));
