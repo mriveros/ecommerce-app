@@ -89,6 +89,7 @@ public class ActivityCheckout extends AppCompatActivity {
 	
 	// declare string variables to store data
 	String Name, Name2, Date, Time, Phone, Date_n_Time, Alamat, Email, Kota, Provinsi;
+	int codCliente;
 	String OrderList = "";
 	String Comment = "";
 	private LocationManager locManager;
@@ -133,10 +134,11 @@ public class ActivityCheckout extends AppCompatActivity {
 		// get session variable
 		session = new Session(getApplicationContext()); //in oncreate
 
-		int idUser = session.getIdUsername();
+		codCliente = session.getIdUsername();
 		String phone = session.getPhone();
 		String email = session.getEmail();
 		String address_delivery = session.getAddress();
+
 
 		//-----------------------Using Location manger for GPS--------------------------------------
 
@@ -288,11 +290,11 @@ public class ActivityCheckout extends AppCompatActivity {
 				// TODO Auto-generated method stub
 				
 				// get data from all forms and send to server
-				Name = edtName.getText().toString();
+				//Name = edtName.getText().toString();
 				Alamat = edtAlamat.getText().toString();
-				Kota = edtKota.getText().toString();
-				
-				Provinsi = edtProvinsi.getText().toString();
+				//Kota = edtKota.getText().toString();
+
+				//Provinsi = edtProvinsi.getText().toString();
 				Email = edtEmail.getText().toString();
 				Name2 = edtName2.getText().toString();
 				Date = btnDate.getText().toString();
@@ -300,7 +302,7 @@ public class ActivityCheckout extends AppCompatActivity {
 				Phone = edtPhone.getText().toString();
 				Comment = edtComment.getText().toString();
 				Date_n_Time = Date+" "+Time;
-				if(Name.equalsIgnoreCase("") || Name2.equalsIgnoreCase("") || Email.equalsIgnoreCase("") || Alamat.equalsIgnoreCase("") || Kota.equalsIgnoreCase("") || Provinsi.equalsIgnoreCase("") ||
+				if(  Name2.equalsIgnoreCase("") || Email.equalsIgnoreCase("") || Alamat.equalsIgnoreCase("")  ||
 						Date.equalsIgnoreCase(getString(R.string.checkout_set_date)) ||
 						Time.equalsIgnoreCase(getString(R.string.checkout_set_time)) ||
 						Phone.equalsIgnoreCase("")){
@@ -525,7 +527,7 @@ public class ActivityCheckout extends AppCompatActivity {
 		 protected Void doInBackground(Void... params) {
 		  // TODO Auto-generated method stub
 			 // send data to server and store result to variable
-			 Result = getRequest(Name, Alamat, Kota, Provinsi, Email, Name2, Date_n_Time, Phone, OrderList, Comment, latitude, longitude, address);
+			 Result = getRequest(codCliente,Alamat, Email, Name2, Date_n_Time, Phone, OrderList, Comment, latitude, longitude, address);
 		  return null;
 		 }
 
@@ -555,7 +557,7 @@ public class ActivityCheckout extends AppCompatActivity {
 	}
 	
     // method to post data to server
-	public String getRequest(String name, String alamat, String kota, String provinsi, String email, String name2, String date_n_time, String phone, String orderlist, String comment, Double latitude, Double longitude, String address){
+	public String getRequest( int codCliente, String alamat, String email, String name2, String date_n_time, String phone, String orderlist, String comment, Double latitude, Double longitude, String address){
 		String result = "";
 		
         HttpClient client = new DefaultHttpClient();
@@ -576,6 +578,7 @@ public class ActivityCheckout extends AppCompatActivity {
 			nameValuePairs.add(new BasicNameValuePair("latitude", latitude.toString()));
 			nameValuePairs.add(new BasicNameValuePair("longitude", longitude.toString()));
 			nameValuePairs.add(new BasicNameValuePair("address", address));
+			nameValuePairs.add(new BasicNameValuePair("cod_client", Integer.toString(codCliente)));
             request.setEntity(new UrlEncodedFormEntity(nameValuePairs,HTTP.UTF_8));
         	HttpResponse response = client.execute(request);
             result = request(response);
