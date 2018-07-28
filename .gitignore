@@ -1,11 +1,10 @@
-gradle
-.gradle/
+
 build
 build.gradle
 gradlew
-.idea/
-.idea/caches/build_file_checksums.ser
-app/app.iml
-build/intermediates/dex-cache/cache.xml
+/.idea/
+/.idea/caches/
+/app/app.iml
+/build/intermediates/dex-cache/
 local.properties
-
+/.idea/caches/
