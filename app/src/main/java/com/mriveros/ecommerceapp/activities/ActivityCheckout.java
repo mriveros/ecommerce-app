@@ -140,52 +140,7 @@ public class ActivityCheckout extends AppCompatActivity {
 		String address_delivery = session.getAddress();
 
 
-		//-----------------------Using Location manger for GPS--------------------------------------
 
-		// Get the location manager
-		locationManager = (LocationManager) getSystemService(this.LOCATION_SERVICE);
-		// Define the criteria how to select the locatioin provider -> use
-		// default
-		Criteria criteria = new Criteria();
-		provider = locationManager.getBestProvider(criteria, false);
-		Location location = locationManager.getLastKnownLocation(provider);
-
-		// Initialize the location fields
-		if (location != null) {
-			System.out.println("Provider " + provider + " has been selected.");
-			latitude = location.getLatitude();
-			longitude = location.getLongitude() ;
-			//--------------------------------------------------------------------------------------
-			Geocoder geocoder = new Geocoder(this, Locale.getDefault());
-
-			try {
-				List<Address> addresses = geocoder.getFromLocation(latitude, longitude, 1);
-
-				if (addresses != null) {
-					Address returnedAddress = addresses.get(0);
-					StringBuilder strReturnedAddress = new StringBuilder();
-					for (int i = 0; i < returnedAddress.getMaxAddressLineIndex(); i++) {
-						strReturnedAddress.append(returnedAddress.getAddressLine(i)).append("");
-					}
-					address = strReturnedAddress.toString();
-				}
-				else {
-					address = "No Address returned!";
-				}
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-				address = "Canont get Address!";
-			}
-			//--------------------------------------------------------------------------------------
-
-
-		} else {
-			latitude = 0;
-			longitude = 0;
-			address = "Address not available";
-		}
-		//------------------------------------------------------------------------------------------
 
 
         //edtName = (EditText) findViewById(R.id.edtName);
@@ -543,7 +498,9 @@ public class ActivityCheckout extends AppCompatActivity {
 	}
 
     // method to show toast message
-    public void resultAlert(String HasilProses){
+	//<p>Message successfully sent!</p>OK
+
+	public void resultAlert(String HasilProses){
 		if(HasilProses.trim().equalsIgnoreCase("OK")){
 			Toast.makeText(ActivityCheckout.this, R.string.ok_alert, Toast.LENGTH_SHORT).show();
 			Intent i = new Intent(ActivityCheckout.this, ActivityConfirmMessage.class);
