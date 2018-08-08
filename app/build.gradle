@@ -1,7 +1,7 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 23
+    compileSdkVersion 26
     buildToolsVersion "23.0.2"
 
     defaultConfig {
@@ -13,9 +13,9 @@ android {
                                 onesignal_google_project_number: "401211824765"]
 
         minSdkVersion 14
-        targetSdkVersion 23
-        versionCode 6
-        versionName '2.1.4'
+        targetSdkVersion 26
+        versionCode 1
+        versionName '1.0'
     }
     buildTypes {
         release {
