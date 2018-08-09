@@ -3,21 +3,15 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical"
-    android:padding="20dp">
-
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="95dp">
-
-    </FrameLayout>
+    android:padding="20dp" >
 
     <EditText
         android:id="@+id/etUsername"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:hint="Username"
-        android:padding="10dp" />
+        android:padding="10dp"
+        android:hint="Username" />
 
     <EditText
         android:id="@+id/etPassword"
