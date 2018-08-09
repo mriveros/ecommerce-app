@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="145dp"
+        android:layout_marginTop="181dp"
         android:ems="10"
         android:hint="Username" />
 
@@ -23,9 +23,7 @@
         android:id="@+id/etPassword"
         android:layout_width="341dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="224dp"
+        android:layout_centerInParent="true"
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword" />
@@ -36,7 +34,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="224dp"
+        android:layout_marginBottom="190dp"
         android:background="@color/ColorPrimary"
         android:text="@string/iniciar_sesion"
         android:textColor="@color/white" />
@@ -47,10 +45,10 @@
         android:layout_height="wrap_content"
         android:layout_alignEnd="@+id/etUsername"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="207dp"
+        android:layout_marginBottom="174dp"
         android:text="Todavía no es usuario? Regístrese aqui."
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="@color/blue"
         android:textSize="12sp" />
-    
+
 </RelativeLayout>
