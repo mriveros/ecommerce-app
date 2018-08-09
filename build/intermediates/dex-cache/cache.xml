@@ -1,2 +1,187 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
+
+    <item
+        jar="/Users/marcosriveros/reposit/marvel/ecommerce-app/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics-impl/9.0.2/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="6c58c14d15602fea2c50138c73bb107e8b832b62">
+        <dex dex="/Users/marcosriveros/reposit/marvel/ecommerce-app/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-analytics-impl-9.0.2_168c3765017b99f391c5f9cfd2cda94f51e95c2c.jar" />
+    </item>
+    <item
+        jar="/Users/marcosriveros/reposit/marvel/ecommerce-app/app/libs/signpost-commonshttp4-1.2.1.2.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="731e05de30cfeb1f41d417f886277f9597fe0f36">
+        <dex dex="/Users/marcosriveros/reposit/marvel/ecommerce-app/app/build/intermediates/pre-dexed/debug/signpost-commonshttp4-1.2.1.2_8ea37aaaf76e238e5c3c6b30e163254b47eb8592.jar" />
+    </item>
+    <item
+        jar="/Users/marcosriveros/reposit/marvel/ecommerce-app/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/libs/internal_impl-23.1.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="/Users/marcosriveros/reposit/marvel/ecommerce-app/app/build/intermediates/pre-dexed/debug/internal_impl-23.1.1_2885c8633a288643d8c66c984d31d5cc598e6b4c.jar" />
+    </item>
+    <item
+        jar="/Users/marcosriveros/reposit/marvel/ecommerce-app/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/9.0.2/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="e6970f0554f9508c041f1f6960af15cc888c9f35">
+        <dex dex="/Users/marcosriveros/reposit/marvel/ecommerce-app/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-gcm-9.0.2_809cb31631857fbbd072b6fd26f72b48bed15490.jar" />
+    </item>
+    <item
+        jar="/Users/marcosriveros/reposit/marvel/ecommerce-app/app/libs/signpost-jetty6-1.2.1.2.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="50d833636e78a21ac10bfad6fe62b8dac84f4366">
+        <dex dex="/Users/marcosriveros/reposit/marvel/ecommerce-app/app/build/intermediates/pre-dexed/debug/signpost-jetty6-1.2.1.2_e3512c5b2979e2d7769677aeb846939407d14f46.jar" />
+    </item>
+    <item
+        jar="/Users/marcosriveros/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.1/support-annotations-23.1.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="/Users/marcosriveros/reposit/marvel/ecommerce-app/app/build/intermediates/pre-dexed/debug/support-annotations-23.1.1_e24899999913c7168a6882da3c9d7a8b5f4d6ca8.jar" />
+    </item>
+    <item
+        jar="/Users/marcosriveros/reposit/marvel/ecommerce-app/app/libs/signpost-core-1.2.1.2.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="bf95955dcf3d5a78c201e49b0c336787ea73f161">
+        <dex dex="/Users/marcosriveros/reposit/marvel/ecommerce-app/app/build/intermediates/pre-dexed/debug/signpost-core-1.2.1.2_4cd6014e1fbe4f8bc1c837b564d0e159a2744fe4.jar" />
+    </item>
+    <item
+        jar="/Users/marcosriveros/reposit/marvel/ecommerce-app/app/build/intermediates/exploded-aar/com.github.clans/fab/1.6.3/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="8f65e6101c990702ad4178f592291354eb0cf2c7">
+        <dex dex="/Users/marcosriveros/reposit/marvel/ecommerce-app/app/build/intermediates/pre-dexed/debug/com.github.clans-fab-1.6.3_381e3bce598cfbf50109cd80bc1dcfd29fc78ba8.jar" />
+    </item>
+    <item
+        jar="/Users/marcosriveros/reposit/marvel/ecommerce-app/app/build/intermediates/exploded-aar/com.onesignal/OneSignal/2.6.2/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="9b01cccf45e277f91321ce021e78e629d287d01f">
+        <dex dex="/Users/marcosriveros/reposit/marvel/ecommerce-app/app/build/intermediates/pre-dexed/debug/com.onesignal-OneSignal-2.6.2_1034a9dcdf2bb13deae2206a96de30c864d613df.jar" />
+    </item>
+    <item
+        jar="/Users/marcosriveros/reposit/marvel/ecommerce-app/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="/Users/marcosriveros/reposit/marvel/ecommerce-app/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.1.1_7add1a419e5cdc250861c867eab5774726973438.jar" />
+    </item>
+    <item
+        jar="/Users/marcosriveros/reposit/marvel/ecommerce-app/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
+        <dex dex="/Users/marcosriveros/reposit/marvel/ecommerce-app/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.1.1_79e03acbd0b263bc2d0a065d657d1db83c4a6b02.jar" />
+    </item>
+    <item
+        jar="/Users/marcosriveros/reposit/marvel/ecommerce-app/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="379471b2bd17d9737c050345c08e8c7d16589784">
+        <dex dex="/Users/marcosriveros/reposit/marvel/ecommerce-app/app/build/intermediates/pre-dexed/debug/com.android.support-design-23.1.1_756d37fcf0852f7b145ae53f372b80f8ddad5456.jar" />
+    </item>
+    <item
+        jar="/Users/marcosriveros/reposit/marvel/ecommerce-app/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/9.0.2/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="20e1a0f0de6276a5f36062b655f8b20f8cc00cc4">
+        <dex dex="/Users/marcosriveros/reposit/marvel/ecommerce-app/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-maps-9.0.2_c728592ff052d2a0a619189f0e426efcf44d5af1.jar" />
+    </item>
+    <item
+        jar="/Users/marcosriveros/reposit/marvel/ecommerce-app/app/build/intermediates/exploded-aar/com.android.volley/volley/1.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="2cd4b982617e544728de0782d718a58ce1b06e3f">
+        <dex dex="/Users/marcosriveros/reposit/marvel/ecommerce-app/app/build/intermediates/pre-dexed/debug/com.android.volley-volley-1.0.0_5987c2a712a5c509c40039a1b55bdcd77ee78f29.jar" />
+    </item>
+    <item
+        jar="/Users/marcosriveros/reposit/marvel/ecommerce-app/app/libs/picasso-2.5.2.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="/Users/marcosriveros/reposit/marvel/ecommerce-app/app/build/intermediates/pre-dexed/debug/picasso-2.5.2_e52918b2321f2d522d502a71ec0ede5192a7d0c2.jar" />
+    </item>
+    <item
+        jar="/Users/marcosriveros/reposit/marvel/ecommerce-app/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="5e412e954a24c5310a459c09870e4e2081aceb03">
+        <dex dex="/Users/marcosriveros/reposit/marvel/ecommerce-app/app/build/intermediates/pre-dexed/debug/com.android.support-cardview-v7-23.1.1_9f1ceab9d8939bae906cbba070d7427e8e1a9760.jar" />
+    </item>
+    <item
+        jar="/Users/marcosriveros/reposit/marvel/ecommerce-app/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.0.2/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="4022261eeea0d92eb2997a68d2c1f084a16abad9">
+        <dex dex="/Users/marcosriveros/reposit/marvel/ecommerce-app/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-9.0.2_8a0a48c73f94e48f0daaa112ecebba84a4f55960.jar" />
+    </item>
+    <item
+        jar="/Users/marcosriveros/reposit/marvel/ecommerce-app/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.0.2/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="aec1bc54964a85d851c2c1b1cb7f90f7dbd755ab">
+        <dex dex="/Users/marcosriveros/reposit/marvel/ecommerce-app/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tasks-9.0.2_e599e16d0f218d8b2b07261eed1ee28d84399373.jar" />
+    </item>
+    <item
+        jar="/Users/marcosriveros/reposit/marvel/ecommerce-app/app/build/intermediates/exploded-aar/com.android.support/palette-v7/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="a978650837318cf056bf3383ff02fe7a3b891f20">
+        <dex dex="/Users/marcosriveros/reposit/marvel/ecommerce-app/app/build/intermediates/pre-dexed/debug/com.android.support-palette-v7-23.1.1_0c047fb33b650e323ff071c28f72cfbb3cf16e83.jar" />
+    </item>
+    <item
+        jar="/Users/marcosriveros/reposit/marvel/ecommerce-app/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/9.0.2/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="fe5b47e764869f1076cb9cfe12801ed2ef4e9117">
+        <dex dex="/Users/marcosriveros/reposit/marvel/ecommerce-app/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-analytics-9.0.2_fdfcf05790bd47ab764d54e837c88406316511e3.jar" />
+    </item>
+    <item
+        jar="/Users/marcosriveros/reposit/marvel/ecommerce-app/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/9.0.2/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="92a1d5f71b0fc8938f1d3f2e6ef984b52b894b4d">
+        <dex dex="/Users/marcosriveros/reposit/marvel/ecommerce-app/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-location-9.0.2_655613b751b9c12d9dcce14d1a9394d2b9845c57.jar" />
+    </item>
+    <item
+        jar="/Users/marcosriveros/reposit/marvel/ecommerce-app/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="09c5e804bc67fc0580360043dff067df574a60d4">
+        <dex dex="/Users/marcosriveros/reposit/marvel/ecommerce-app/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-23.1.1_ea066aef950d3bb170e144cc1e9ef449b74b9d15.jar" />
+    </item>
+    <item
+        jar="/Users/marcosriveros/reposit/marvel/ecommerce-app/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.0.2/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="9919563cffd8e3732e944d3c437d4b9575a08448">
+        <dex dex="/Users/marcosriveros/reposit/marvel/ecommerce-app/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-common-9.0.2_d799f4067ff835bbc939710b3c0a610c53bd0138.jar" />
+    </item>
+    <item
+        jar="/Users/marcosriveros/reposit/marvel/ecommerce-app/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-iid/9.0.2/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="cf16220db9128d91a215aedc739584181d5ca6a4">
+        <dex dex="/Users/marcosriveros/reposit/marvel/ecommerce-app/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-iid-9.0.2_c522fae7922703fa893fd18090f07fc27556f2d6.jar" />
+    </item>
+    <item
+        jar="/Users/marcosriveros/reposit/marvel/ecommerce-app/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.2/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="94d9cedd04b124aed044ac71c451a292856d854c">
+        <dex dex="/Users/marcosriveros/reposit/marvel/ecommerce-app/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-base-9.0.2_e41d69e8bfc2d78809a49c33170d7bae0c0fc88e.jar" />
+    </item>
+    <item
+        jar="/Users/marcosriveros/reposit/marvel/ecommerce-app/app/libs/universal-image-loader-1.9.5.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="442dbfb517b9ab5cb5c6da7ebf8cc28ec5bd0375">
+        <dex dex="/Users/marcosriveros/reposit/marvel/ecommerce-app/app/build/intermediates/pre-dexed/debug/universal-image-loader-1.9.5_8c3c6cbacb6373a7ce706850c5b3fb4a129a7aea.jar" />
+    </item>
+
+</items>
